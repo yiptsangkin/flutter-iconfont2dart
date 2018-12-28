@@ -1,5 +1,5 @@
 # flutter-iconfont2dart
-This a script for transfering from iconfont.css([Alibaba](https://www.iconfont.cn/)) file to dart file which base on dart-lang.
+This a script for transfering from iconfont.css([Alibaba Iconfont](https://www.iconfont.cn/)) file to dart file which base on dart-lang.
 .
 #### how to use?
 At first, download your iconfont project's files, unzip them and put it in this script project's 'src' folder. Then rename the the folder's to the class's name what you want.
