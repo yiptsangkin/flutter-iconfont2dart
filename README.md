@@ -25,3 +25,29 @@ fonts:
 ```
 new Icon(LogisticsIcon.iconShangyiyehoutuifanhui)
 ```
+
+#### 如何使用
+第一步，将从iconfont下载的工程文件解压到这个脚本工程的src文件夹中，然后将它重新命名为你想要的family name。
+
+第二步，在这个脚本工程的根目录下面运行 'dart iconfont2dart.dart'。
+
+然后你就可以在dist文件夹中看到输出的文件
+
+#### 怎么在flutter中使用
+1、修改pubspec.yaml，像这样增加你的iconfont：
+
+```
+fonts:
+     - family: LogisticsIcon
+       fonts:
+         - asset: lib/assets/font/iconfont.ttf
+```
+
+2、在需要使用到iconfont的dart文件中导入输出的那个文件。
+
+3、像这样使用它：
+
+```
+new Icon(LogisticsIcon.iconShangyiyehoutuifanhui)
+```
+
