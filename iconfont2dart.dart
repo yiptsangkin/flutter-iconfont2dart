@@ -75,7 +75,7 @@ main(List<String> args) async {
       cssFile = new File(cssPath.absolute.path);
       if (cssFile.existsSync()) {
         cssCtx = cssFile.readAsStringSync();
-        RegExp regExp = new RegExp('\..*?:before.*?}');
+        RegExp regExp = new RegExp('\..*?:before.*(\n|).*(\n|)?}');
         Iterable<Match> mapList = regExp.allMatches(cssCtx);
         String allIcon = '';
         for (Match mapItem in mapList) {
